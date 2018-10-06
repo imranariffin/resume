@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+% Author : Imran Ariffin (forked from https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+  \usepackage{latexsym}
+  \usepackage[empty]{fullpage}
+  \usepackage{titlesec}
+  \usepackage{marvosym}
+  \usepackage[usenames,dvipsnames]{color}
+  \usepackage{verbatim}
+  \usepackage{enumitem}
+  \usepackage[hidelinks]{hyperref}
+  \usepackage{fancyhdr}
+  \usepackage[english]{babel}
+  
+  \pagestyle{fancy}
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  
+  % Adjust margins
+  \addtolength{\oddsidemargin}{-0.5in}
+  \addtolength{\evensidemargin}{-0.5in}
+  \addtolength{\textwidth}{1in}
+  \addtolength{\topmargin}{-.5in}
+  \addtolength{\textheight}{1.0in}
+  
+  \urlstyle{same}
+  
+  \raggedbottom
+  \raggedright
+  \setlength{\tabcolsep}{0in}
+  
+  % Sections formatting
+  \titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+  }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  
+  %-------------------------
+  % Custom commands
+  \newcommand{\resumeItem}[2]{
+    \item\small{
+      \textbf{#1}{#2 \vspace{-2pt}}
+    }
+  }
+  
+  \newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+      \end{tabular*}\vspace{-5pt}
+  }
+  
+  \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+  
+  \renewcommand{\labelitemii}{$\circ$}
+  
+  \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+  \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+  \newcommand{\resumeItemListStart}{\begin{itemize}}
+  \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+  
+  %-------------------------------------------
+  %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+  
+  \begin{document}
+  
+  %----------HEADING-----------------
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{http://imranariffin.github.io/}{\Large Imran Ariffin}} & Email : \href{mailto:ariffin.imran@gmail.com}{ariffin.imran@gmail.com}\\
+    \href{http://imranariffin.github.io/}{http://www.imranariffin.github.io} & Mobile : 647-863-7073 \\
+  \end{tabular*}
+  
+  
+  %-----------EDUCATION-----------------
+  \section{Education}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {University of Toronto}{Toronto, ON}
+        {Bachelors of Applied Science in Computer Engineering}{Sept. 2013 -- Nov. 2017}
+    \resumeSubHeadingListEnd
+  
+  
+  %-----------EXPERIENCE-----------------
+  \section{Industry Experience}
+    \resumeSubHeadingListStart
+  
+      \resumeSubheading
+        {Scotiabank Wealth Rapid Lab - Client On-boarding}{Toronto, ON}
+        {Software Engineer}{Jan 2018 - Present}
+        \resumeItemListStart
+          \resumeItem{}
+            {Always ready to jump in to, quickly investigate and resolve production issues by analyzing the logs and database as well as quick technical discussions with other developers resulting in average resolution time of 3 days.}
+          \resumeItem{}
+            {Implemented redux middleware to send browser errors back to the server providing deeper insights in production issues investigation.}
+          \resumeItem{}
+            {Improved the UI by refactoring for iPad and iPhone enabling better accessibility for clients to onboard.}
+          \resumeItem{}
+            {Implemented automatic logout on session token timeout resulting in better user experience.}
+        \resumeItemListEnd
+  
+      \resumeSubheading
+        {Department of Economics, University of Toronto}{Toronto, ON}
+        {Data Visualization Research Assistant}{May 2017 - Sept 2017}
+        \resumeItemListStart
+          \resumeItem{}
+            {Developed an interactive web-based frequency polar chart enabling providing a way for researchers to see trends from past to current. Implemented using React, Highcharts and Express for client-server architecture and Python for data parsing.}
+        \resumeItemListEnd
+  
+      \resumeSubheading
+        {Dealters.my}{Kuala Lumpur, Malaysia}
+        {Fullstack Engineer Intern}{May 2015 - Sept 2015}
+        \resumeItemListStart
+          \resumeItem{}
+            {Bootstrapped the backend server using Nodejs, Express, Facebook login and Mongodb, leading to the launch of the web application on Heroku.}
+          \resumeItem{}
+            {Cooperated closely with front-end engineer and designer to design the API and products schema.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  
+  
+  %-----------PROJECTS-----------------
+  \section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {liveSWOT.com}{www.liveswot.com/}
+        {A platform to collaborate on your SWOT analysis with your team mates in real time}{}
+        \resumeItemListStart
+          \resumeItem{}
+            {Designed and developed material UI for the Redux-React application using Material design.}
+          \resumeItem{}
+            {Designed and developed RESTful API endpoints using Django Rest Framework and PostgreSQL.}
+        \resumeItemListEnd
+      \resumeSubheading
+        {Game of Life Optimization}{github.com/imranariffin/ece454/}
+        {As part of a Computer Systems Programming course at University of Toronto}{}
+        \resumeItemListStart
+          \resumeItem{}
+            {Optimized the existing game of life code using pthread barrier, instruction level parallelism, fork-join,block tiling for better caching and function in-lining, resulting in 1190\% improvement in speed.}
+          \resumeItem{}
+            {Profiled and measured code performance using perf and gprof to attack on specific part of the code.}
+        \resumeItemListEnd
+      \resumeSubheading
+        {GGGolf}{}
+        {As part Software Engineering course at University of Toronto}{}
+        \resumeItemListStart
+          \resumeItem{}
+            {Worked in a team of 7 as a full stack engineer to create a web platform for golf seniors to create and join golf tournaments, create and join teams.}
+          \resumeItem{}
+            {Created using Ruby on Rails, SQLite, Twitter Bootstrap and Stripe.}
+        \resumeItemListEnd
+      \resumeSubheading
+        {Mysukan Web Application}{}
+        {Voluntary project for the annual sports events for Malaysian students accross Canada}{}
+        \resumeItemListStart
+          \resumeItem{}
+            {Worked as full stack developer with a designer to ensure the smooth running of the 3-day event of 200+ participants by developing a website for participants to register for sports, create teams and get updates.}
+          \resumeItem{}
+            {Created with Nodejs, Express, Mongodb, Twitter Bootstrap and jQuery.}
+          \resumeItem{}
+            {Enabled users to sign up with Facebook, view games rules, get email updates and view live tweets about the event.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  
+  %
+  %--------PROGRAMMING SKILLS------------
+  %\section{Programming Skills}
+  %  \resumeSubHeadingListStart
+  %    \item{
+  %      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+  %      \hfill
+  %      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+  %    }
+  %  \resumeSubHeadingListEnd
+  
+  
+  %-------------------------------------------
+  \end{document}
+  
